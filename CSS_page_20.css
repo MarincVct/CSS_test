@@ -1,0 +1,128 @@
+@keyframes rotation_TT{
+from {
+	transform: rotate(0deg);
+}
+to {
+	transform: rotate(360deg);
+}
+}
+:root{
+	--TTwhite: hsl(0, 0%, 100%); 
+	--TToffwhite: hsl(0, 0%, 95%); 
+	--TTgrey: hsl(0, 0%, 85%); 
+	--TTdarkgrey: hsl(0, 0%, 45%); 
+	--TTblack: hsl(0, 0%, 15%); 
+	--TTred: hsl(355, 100%, 60%);
+	--TTblue: hsl(204, 100%, 48%);
+	--TTfont: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+} 
+.main_TTpost{
+	width:380px;
+	height: 711px;
+	font-family: var(TTfont);
+	border-radius: 10px;
+	margin: 0 auto;
+	background-size: auto 100%;
+	color: var(--TTwhite);
+}
+
+.topDiv_TTpost{
+	width:95%;
+	margin: 0 20px;
+	height: 80px;
+	line-height:40px;
+}
+.topIcon_TTpost{
+	font-size:2.55em;
+	color: var(--TTwhite); 
+	width: 14%;
+	float: left;
+	height: 80px;
+	line-height:40px;
+	padding:20px 10px;
+}
+.topText_TTpost{
+	width:34%;
+	margin: 10px 0.5% 0 0.5%;
+	padding: 10px 0;
+	font-size: 1.4em;
+	color: var(--TTgrey);
+	font-weight: 800;
+	float: left;
+	text-align:center;
+}
+.hovering_TTpost{
+	color:var(--TTwhite);
+	text-shadow : 0 0 3px 2px rgba(0,0,0,0.5);
+	border-bottom: 3px solid var(--TTwhite); 
+}
+
+.infoDiv_TTpost{
+	height: 640px;
+	width:300px;
+	margin:10px 5px;
+	float:left;
+}
+.infoNone_TTpost{
+	width:100%;
+	height:445px;
+}
+.pseudo_TTpost{
+	font-weight: 700;
+	padding: 5px 15px;
+	font-size: 1.2em;
+}
+.infoText_TTpost{
+	font-weight:200;
+	height:80px;
+	overflow:auto;
+	padding-left:15px;
+	font-size: 1em;
+}
+.infoMusic_TTpost{
+	height:25px;
+	overflow: hidden;
+	font-size: 1.5em;
+	padding-left:15px;
+}
+.textMusic_TTpost{
+	font-size: 0.8em;
+}
+
+.vertical_TTpost{
+	height:630px;
+	float:left;
+	width:70px;
+	text-align:center;
+}
+.verticalNone_TTpost{
+	height:180px;
+}
+.img_TTpost,.verticalMusic_TTpost{
+	background-size: auto 100%;
+	width:60px;
+	height:60px;
+	border-radius: 30px;
+	border: 1px solid var(--TTwhite);
+	margin-bottom:20px;
+}
+.verticalIcon_TTpost{
+	font-size: 2.3em;
+	padding-bottom: 10px;
+	text-align:center;
+}
+.verticalText_TTpost{
+	font-size:18px;
+	font-weight:700;
+	padding-top: 5px;
+}
+.verticalMusic_TTpost{
+	border: 0px solid white;
+	width: 55px;
+	height: 55px;
+	borde-radius : 28px;
+	margin : 0 auto;
+}
+.verticalMusic_TTpost:hover{
+	animation: rotation_TT 2s linear infinite;
+}
