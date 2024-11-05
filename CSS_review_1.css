@@ -1,0 +1,100 @@
+:root{
+	color-scheme: light;
+	--GRbg: hsl(0, 0%, 100%); 
+	--GRtext: hsl(0, 0%, 20.8%);
+	--GRtinyText: hsl(0, 0%, 31.8%); 
+	--GRaccent: hsl(172, 98%, 19.6%); 
+	--GRstar: hsl(8.3, 100%, 50.4%); 
+	--GRseparator : hsl(0, 0%, 84.3%);
+	--GRbutton: hsl(146.7, 41.8%, 43.1%); 
+	--GRwhite: hsl(220, 8.6%, 93.1%);
+	--GRblack: hsl(0,0%,0%);
+	--GRnoStar: hsl(133.3, 9.7%, 81.8%);
+	--GRyellow: hsl(37.4, 91.3%, 54.9%);
+	--GRsearch: hsl(42, 31.3%, 93.7%);
+	--GRfont: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+} 
+[data-color-scheme="dark"] { 
+	color-scheme: dark; 
+	--GRbg: hsl(0, 0%, 5%); 
+	--GRtext: hsl(0, 0%, 76.5%); 
+	--GRtinyText: hsl(0, 0%, 65.1%); 
+	--GRaccent: hsl(179.2, 29.4%, 49.4%);
+	--GRstar: hsl(8.9, 100%, 50%);
+	--GRseparator : hsl(0, 0%, 13.3%);
+	--GRbutton: hsl(154.2, 100%, 22.4%); 
+	--GRwhite: hsl(220, 8.6%, 93.1%);
+	--GRblack: hsl(0,0%,0%);
+	--GRnoStar: hsl(240, 2.3%, 82.7%);
+	--GRyellow: hsl(37.4, 91.3%, 54.9%);
+	--GRsearch: hsl(0,0%,0%);
+	--GRfont: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+#reviewGR.main{
+	width: 400px;
+	background-color: var(--GRbg);
+	padding : 10px;
+	font-family: var(--GRfont);
+	margin: 0 auto;
+	border-radius: 10px;
+	color: var(--GRtext);
+	overflow: auto;
+}
+
+/* MISC  */
+#reviewGR .bullet {
+	color: var(--GRseparator);
+}
+
+i.colorStar{
+	color: var(--GRstar)!important;
+}
+i.bi-star-fill{
+	color: var(--GRnoStar);
+}
+
+/* REVIEW */
+#reviewGR .review {
+	width: 100%;
+	padding: 10px 10px 0 10px;
+}
+#reviewGR .review .icon{
+	width: 50px;
+	height:50px;
+	border-radius: 50%;
+	background-size: 100% auto;
+	float:left;
+	margin: 0 10px;
+} 
+
+#reviewGR .review .info{
+	width: 250px;
+	height:50px;
+	float:left;
+	padding: 5px 0;
+} 
+
+#reviewGR .review .dots{
+	width: 20px;
+	height:50px;
+	float:left;
+	font-size: 1.7em;
+	line-height: 50px;
+} 
+
+#reviewGR .review .text{
+	padding: 10px;
+} 
+#reviewGR .review .react{
+	color: var(--GRaccent);
+	padding : 10px;
+} 
+#reviewGR .user{
+	height:50px;
+} 
+#reviewGR .review .user .name{
+	color: var(--GRaccent);
+	font-weight: 550;
+} 
+
