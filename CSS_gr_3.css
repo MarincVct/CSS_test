@@ -1,0 +1,88 @@
+:root{
+	color-scheme: light;
+	--GRbg: hsl(0, 0%, 100%); 
+	--GRtext: hsl(0, 0%, 15%); 
+	--GRtinyText: hsl(0, 0%, 35%); 
+	--GRaccent: hsl(0, 0%, 45%); 
+	--GRfont: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+} 
+[data-color-scheme="dark"] { 
+	color-scheme: dark; 
+	--GRbg: hsl(0, 0%, 20%); 
+	--GRtext: hsl(0, 0%, 95%); 
+	--GRtinyText: hsl(0, 0%, 85%); 
+	--GRaccent: hsl(0, 0%, 45%); 
+	--GRfont: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+#authorGR.main{
+	width: 400px;
+	height: 865px;
+	background-color: var(--GRbg);
+	padding : 10px;
+	font-family: var(--GRfont);
+	margin: 0 auto;
+	border-radius: 10px;
+	color: var(--GRtext)
+}
+
+#authorGR .menu{
+	width: 100%;
+	height: 40px;
+}
+
+#authorGR .menu .title{
+	width: 60%;
+	height: 40px;
+	font-size: 1em;
+	float:left;
+}
+
+#authorGR .menu .icon{
+	width: 20%;
+	height: 40px;
+	font-size: 2em;
+	float:left;
+}
+
+#authorGR .profile{
+	width: 100%;
+	height: 150px;
+}
+
+#authorGR .profile .icon{
+	width: 100px;
+	height: 100px;
+	border-radius: 50px;
+	float:left;
+	background-size: 100% auto;
+}
+
+#authorGR .profile .author{
+	width: 250px;
+	height: 150px;
+	float:left;
+}
+
+/*INSERT ICI LE RESTE DU PROFIL*/
+
+#authorGR .nav{
+	width: 100%;
+	height: 40px;
+}
+
+#authorGR .nav .navIc{
+	width: 30%;
+	height: 40px;
+	font-size: 1em;
+	float:left;
+}
+#authorGR .nav .navIc i{
+	font-size: 2em;
+}
+
+#authorGR .resume{
+	width: 100%;
+	height: 100px;
+}
+
