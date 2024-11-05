@@ -1,0 +1,108 @@
+:root{
+	color-scheme: light;
+	--GRbg: hsl(0, 0%, 100%); 
+	--GRtext: hsl(0, 0%, 15%); 
+	--GRtinyText: hsl(0, 0%, 35%); 
+	--GRaccent: hsl(0, 0%, 45%); 
+	--GRstar: hsl(0, 0%, 45%); 
+	--GRfont: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+} 
+[data-color-scheme="dark"] { 
+	color-scheme: dark; 
+	--GRbg: hsl(0, 0%, 20%); 
+	--GRtext: hsl(0, 0%, 95%); 
+	--GRtinyText: hsl(0, 0%, 85%); 
+	--GRaccent: hsl(171 100% 42%); 
+	--GRstar: hsl(21 100% 47%);
+	--GRfont: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+#authorGR.main{
+	width: 400px;
+	height: 725px;
+	background-color: var(--GRbg);
+	padding : 10px;
+	font-family: var(--GRfont);
+	margin: 0 auto;
+	border-radius: 10px;
+	color: var(--GRtext)
+}
+
+/* MENU HAUT */
+#authorGR .menu{
+	width: 100%;
+	height: 50px;
+}
+
+#authorGR .menu .title{
+	width: 70%;
+	height: 50px;
+	font-size: 1.3em;
+	float:left;
+}
+
+#authorGR .menu .icon{
+	width: 15%;
+	height: 50px;
+	font-size: 2.2em;
+	float:left;
+	text-align: center;
+}
+
+/* PROFIL */
+#authorGR .profile{
+	width: 100%;
+	height: 150px;
+}
+
+#authorGR .profile .icon{
+	width: 125px;
+	height: 125px;
+	border-radius: 50%;
+	float:left;
+	background-size: 100% auto;
+	margin: 20px;
+}
+/* PROFIL INFO  */
+#authorGR .profile .author{
+	width: 250px;
+	height: 150px;
+	float:left;
+	font-size: 0.9em;
+}
+
+#authorGR .profile .name{
+	font-size: 1.4em;
+}
+#authorGR .profile .number{
+	color: var(--GRtinyText);
+}
+i.colorStar{
+	color: var(--GRstar);
+}
+
+/*NAVIGATION*/
+#authorGR .nav{
+	width: 100%;
+	height: 40px;
+	color: var(--GRaccent);
+}
+
+#authorGR .nav .navIc{
+	width: 32%;
+	height: 40px;
+	font-size: 1em;
+	float:left;
+	text-align: center;
+	line-height: 40px;
+}
+#authorGR .nav .navIc i{
+	font-size: 2em;
+}
+
+#authorGR .resume{
+	width: 100%;
+	height: 100px;
+	padding: 0px 10px;
+}
+
