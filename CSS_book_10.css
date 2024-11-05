@@ -1,0 +1,267 @@
+:root{
+	color-scheme: light;
+	--GRbg: hsl(0, 0%, 100%); 
+	--GRtext: hsl(0, 0%, 20.8%);
+	--GRtinyText: hsl(0, 0%, 31.8%); 
+	--GRaccent: hsl(172, 98%, 19.6%); 
+	--GRstar: hsl(8.3, 100%, 50.4%); 
+	--GRseparator : hsl(0, 0%, 84.3%);
+	--GRbutton: hsl(146.7, 41.8%, 43.1%); 
+	--GRwhite: hsl(220, 8.6%, 93.1%);
+	--GRblack: hsl(0,0%,0%);
+	--GRnoStar: hsl(133.3, 9.7%, 81.8%);
+	--GRyellow: hsl(37.4, 91.3%, 54.9%);
+	--GRsearch: hsl(0,0%,0%);
+	--GRfont: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+} 
+[data-color-scheme="dark"] { 
+	color-scheme: dark; 
+	--GRbg: hsl(0, 0%, 5%); 
+	--GRtext: hsl(0, 0%, 76.5%); 
+	--GRtinyText: hsl(0, 0%, 65.1%); 
+	--GRaccent: hsl(179.2, 29.4%, 49.4%);
+	--GRstar: hsl(8.9, 100%, 50%);
+	--GRseparator : hsl(0, 0%, 13.3%);
+	--GRbutton: hsl(154.2, 100%, 22.4%); 
+	--GRwhite: hsl(220, 8.6%, 93.1%);
+	--GRblack: hsl(0,0%,0%);
+	--GRnoStar: hsl(240, 2.3%, 82.7%);
+	--GRyellow: hsl(37.4, 91.3%, 54.9%);
+	--GRsearch: hsl(0,0%,0%);
+	--GRfont: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+#bookGR.main{
+	width: 400px;
+	height: 725px;
+	background-color: var(--GRbg);
+	padding : 10px;
+	font-family: var(--GRfont);
+	margin: 0 auto;
+	border-radius: 10px;
+	color: var(--GRtext);
+	overflow: auto;
+}
+
+/* MISC  */
+#bookGR .bullet {
+	color: var(--GRtinyText);
+}
+
+i.colorStar{
+	color: var(--GRstar)!important;
+}
+i.bi-star-fill{
+	color: var(--GRnoStar);
+}
+
+/* NAVIGATION */
+#bookGR .nav{
+	width: 100%;
+	height: 50px;
+	margin-top: 10px;
+}
+
+#bookGR .nav .icon{
+	width: 17%;
+	height: 50px;
+	font-size: 2.2em;
+	float:left;
+	text-align: center;
+}
+
+/* SEARCH BAR */
+#bookGR .nav .search{
+	width: 62%;
+	height: 30px;
+	font-size: 1.7em;
+	line-height:25px;
+	float:left;
+	margin-left: 15px;
+	background-color: var(--GRsearch);
+	border-radius: 15px;
+}
+
+#bookGR .nav .search i{
+	width: 15%;
+	float: left;
+	padding: 0 10px;
+	font-size: 0.9em;
+}
+
+
+#bookGR .nav .subtext {
+	color: var(--GRtinyText);
+	font-size: 0.7em;
+	width: 65%;
+	height: 30px;
+	float:left;
+	overflow: hidden;
+	padding: 0 5px;
+	line-height: 30px;
+}
+
+#bookGR .infoBook, .description, .buttonArray, .ratings, .reviewsList{
+	width: 100%;
+}
+
+#bookGR .buttonArray{
+	height: 80px;
+}
+
+/* BOOK INFORMATIONS */
+#bookGR .infoBook .book {
+	width: 200px;
+	height: 298px;
+	background-size: 100% auto;
+	margin: 10px auto;
+}
+
+#bookGR .infoBook .title {
+	width: 300px;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 1.4em; 
+}
+
+#bookGR .infoBook .author {
+	width: 300px;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 1em; 
+}
+
+#bookGR .infoBook .author a{
+	color: var(--GRaccent);
+}
+
+#bookGR .infoBook .info {
+	width: 275px;
+	margin: 10px auto;
+	text-align: center;
+	font-size: 1em; 
+}
+
+#bookGR .button{
+	width: 50%;
+	height: 60px;
+	float:left;
+}
+
+#bookGR .button .icon{
+	width: 40px;
+	height: 40px;
+	line-height: 37px;
+	border-radius: 50%;
+	background-color: var(--GRtinyText);
+	color: var(--GRsearch);
+	margin: 0 auto;
+	font-size: 1.6em;
+	text-align: center;
+}
+
+#bookGR .button .text{
+	width: 100%;
+	text-align: center;
+	margin: 5px auto;
+}
+
+#bookGR .title{
+	font-size: 1.2em;
+	text-align:center;
+	width:100%;
+	margin-top: 20px;
+	font-weight: 600;
+}
+
+#bookGR .sepGR{
+	width: 45%;
+	border-top:1px solid var(--GRseparator);
+	margin: 10px auto;
+}
+#bookGR .description .resume{
+	padding: 10px;
+	font-size: 0.9em;
+}
+
+#bookGR .description .info{
+	padding: 10px;
+	font-size: 0.9em;
+	text-align:center;
+}
+
+/* RATINGS */ 
+
+#bookGR .ratings .info{
+	padding: 10px;
+	font-size: 0.9em;
+	text-align:center;
+}
+
+#bookGR .ratings .starsArray{
+	padding: 0 40px;
+	font-size: 0.8em;
+}
+
+#bookGR .ratings .stars{
+	float: left;
+	width:22%;
+}
+#bookGR .ratings .progress{
+	float: left;
+	width:65%;
+	height: 10px;
+	background-color: hsl(0, 0%, 96.1%);
+	margin: 5px;
+}
+
+#bookGR .ratings .progressColor{
+	height: 10px;
+	background-color: var(--GRyellow);
+}
+
+/* REVIEW */
+#bookGR .review {
+	width: 100%;
+	padding: 10px;
+	border-bottom: 1px solid var(--GRseparator);
+}
+#bookGR .review .icon{
+	width: 50px;
+	height:50px;
+	border-radius: 50%;
+	background-size: 100% auto;
+	float:left;
+	margin: 0 10px;
+} 
+
+#bookGR .review .info{
+	width: 250px;
+	height:50px;
+	float:left;
+	padding: 5px 0;
+} 
+
+#bookGR .review .dots{
+	width: 20px;
+	height:50px;
+	float:left;
+	font-size: 1.7em;
+	line-height: 50px;
+} 
+
+#bookGR .review .text{
+	padding: 10px;
+} 
+#bookGR .review .react{
+	color: var(--GRaccent);
+	padding : 10px;
+} 
+#bookGR .user{
+	height:50px;
+} 
+#bookGR .review .user .name{
+	color: var(--GRaccent);
+	font-weight: 550;
+} 
+
